@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/AppDelegate.swift"
+            timestampString = "548799468.649736"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/AppDelegate.swift"
+            timestampString = "548799468.653178"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.354332"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.354582"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.354724"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StockSim.LoginViewController.loginButton(Any) -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/LoginViewController.swift"
+                  timestampString = "548270975.600264"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "1334">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StockSim.LoginViewController.loginButton(Any) -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/LoginViewController.swift"
+                  timestampString = "548270975.603367"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "3114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StockSim.LoginViewController.loginButton(Any) -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/LoginViewController.swift"
+                  timestampString = "548270975.60646"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "549137061.3970309"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "CelebrityTableViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.355189"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.355335"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StockSim.LoginViewController.loginButton(Any) -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/LoginViewController.swift"
+                  timestampString = "548473061.962294"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "189">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StockSim.LoginViewController.loginButton(Any) -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/LoginViewController.swift"
+                  timestampString = "548473061.967023"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.355466"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StockSim.LoginViewController.loginButton(Any) -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/LoginViewController.swift"
+                  timestampString = "548473061.981992"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "539">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.User&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in StockSim.LoginViewController.loginButton(Any) -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/LoginViewController.swift"
+                  timestampString = "548473061.985826"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.355543"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.355639"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/ProfileViewController.swift"
+            timestampString = "548551030.5225151"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "addMoneyButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.355881"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/LoginViewController.swift"
+            timestampString = "548556351.35597"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "549137061.464483"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadSampleCelebs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.152738"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 1 of SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.178874"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 2 of SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.184292"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 3 of SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.18926"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 4 of SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.193648"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 5 of SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.198877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 6 of SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.203818"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.208885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "251">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.15282"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.15289"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.152957"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.153028"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.153097"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.153161"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.153227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.153298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.262813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "247"
+                  endingLineNumber = "247"
+                  offsetFromSymbolStart = "2246">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwifteriOS.JSON, __ObjC.HTTPURLResponse) -&gt; () in SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.268122"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "248"
+                  endingLineNumber = "248"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.153367"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifter-master/Sources/SwifterFollowers.swift"
+            timestampString = "548712811.1534359"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
+            landmarkName = "getUserFollowers(for:cursor:count:skipStatus:includeUserEntities:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.279757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "249"
+                  endingLineNumber = "249"
+                  offsetFromSymbolStart = "2375">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwifteriOS.JSON, __ObjC.HTTPURLResponse) -&gt; () in SwifteriOS.Swifter.getUserFollowers(for: SwifteriOS.UserTag, cursor: Swift.Optional&lt;Swift.String&gt;, count: Swift.Optional&lt;Swift.Int&gt;, skipStatus: Swift.Optional&lt;Swift.Bool&gt;, includeUserEntities: Swift.Optional&lt;Swift.Bool&gt;, success: Swift.Optional&lt;(SwifteriOS.JSON, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;, failure: Swift.Optional&lt;(Swift.Error) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "SwifteriOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/Swifter-master/Sources/SwifterFollowers.swift"
+                  timestampString = "549137067.288224"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "249"
+                  endingLineNumber = "249"
+                  offsetFromSymbolStart = "764">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "549137061.4656529"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loadSampleCelebs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "549137061.466177"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "loadSampleCelebs()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;SwifteriOS.Credential.OAuthAccessToken&gt;, __ObjC.URLResponse) -&gt; () in StockSim.CelebrityTableViewController.loadSampleCelebs() -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/CelebrityTableViewController.swift"
+                  timestampString = "549137062.757923"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "125">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; () in StockSim.CelebrityTableViewController.loadSampleCelebs() -&gt; ()"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/CelebrityTableViewController.swift"
+                  timestampString = "549137062.764878"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

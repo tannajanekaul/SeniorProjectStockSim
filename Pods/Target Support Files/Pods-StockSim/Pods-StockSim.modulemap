@@ -1,0 +1,6 @@
+framework module Pods_StockSim {
+  umbrella header "Pods-StockSim-umbrella.h"
+
+  export *
+  module * { export * }
+}
