@@ -33,8 +33,8 @@ class ViewController: UIViewController {
         Auth.auth().createUser(withEmail: UsernameTextField.text!, password: PasswordTextField.text!, completion: { (authData, error)  in
             if error == nil {
                 self.user = Profile(name: self.UsernameTextField.text!, money:self.baseMoney)
-                self.ref.child("users/\(authData!.uid)/username").setValue(self.user.name)
-                self.ref.child("users/\(authData!.uid)/money").setValue(self.user.money)
+                self.ref.child("users/\(authData?.user.uid)/username").setValue(self.user.name)
+                self.ref.child("users/\(authData?.user.uid)/money").setValue(self.user.money)
                 
                 let loginView = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                 //self.present(vc, animated: true, completion: nil)

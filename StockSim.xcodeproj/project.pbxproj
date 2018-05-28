@@ -10,7 +10,6 @@
 		36809EC973752F2AABDCA73A /* Pods_StockSim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E353A9F7FBF927045127CC /* Pods_StockSim.framework */; };
 		440BBE8020AD39E500EFEB4C /* CelebrityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440BBE7F20AD39E500EFEB4C /* CelebrityTableViewCell.swift */; };
 		440BBE8220AD3AEF00EFEB4C /* CelebrityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440BBE8120AD3AEF00EFEB4C /* CelebrityTableViewController.swift */; };
-		4412BF9020B73E5F00C78C5D /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4412BF8720B73E4800C78C5D /* Swifter.framework */; };
 		44AA6C5420AB8F79003A21BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA6C5320AB8F79003A21BB /* AppDelegate.swift */; };
 		44AA6C5620AB8F79003A21BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA6C5520AB8F79003A21BB /* ViewController.swift */; };
 		44AA6C5920AB8F79003A21BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44AA6C5720AB8F79003A21BB /* Main.storyboard */; };
@@ -30,55 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4412BF8220B73E4800C78C5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7C839B6E19422CFF003A6950;
-			remoteInfo = SwifterSampleiOS;
-		};
-		4412BF8420B73E4800C78C5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7CA4813B19A2EA8D0030B30D;
-			remoteInfo = SwifterSampleOSX;
-		};
-		4412BF8620B73E4800C78C5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7AE893E71C05127900A29F63;
-			remoteInfo = SwifteriOS;
-		};
-		4412BF8820B73E4800C78C5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7AE893FB1C0512C400A29F63;
-			remoteInfo = SwifterMac;
-		};
-		4412BF8A20B73E4800C78C5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 269B47A11D3AAAE20042D137;
-			remoteInfo = SwiftertvOS;
-		};
-		4412BF8C20B73E4800C78C5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7CCD875C1C66099B0068099B;
-			remoteInfo = SwifteriOSTests;
-		};
-		4412BF8E20B73E4800C78C5D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7CCD87791C660EA30068099B;
-			remoteInfo = SwifterOSXTests;
-		};
 		44AA6C6520AB8F79003A21BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 44AA6C4820AB8F78003A21BB /* Project object */;
@@ -100,7 +50,6 @@
 		1DDF09E5E53EFE917037CCFA /* Pods_StockSimTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockSimTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		440BBE7F20AD39E500EFEB4C /* CelebrityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityTableViewCell.swift; sourceTree = "<group>"; };
 		440BBE8120AD3AEF00EFEB4C /* CelebrityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityTableViewController.swift; sourceTree = "<group>"; };
-		4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "swifter-stable/XCode/Swifter.xcodeproj"; sourceTree = "<group>"; };
 		44AA6C5020AB8F79003A21BB /* StockSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44AA6C5320AB8F79003A21BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44AA6C5520AB8F79003A21BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4412BF9020B73E5F00C78C5D /* Swifter.framework in Frameworks */,
 				36809EC973752F2AABDCA73A /* Pods_StockSim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,24 +107,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4412BF7920B73E4800C78C5D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4412BF8320B73E4800C78C5D /* .app */,
-				4412BF8520B73E4800C78C5D /* SwifterSampleOSX */,
-				4412BF8720B73E4800C78C5D /* Swifter.framework */,
-				4412BF8920B73E4800C78C5D /* Swifter.framework */,
-				4412BF8B20B73E4800C78C5D /* Swifter.framework */,
-				4412BF8D20B73E4800C78C5D /* SwifteriOSTests.xctest */,
-				4412BF8F20B73E4800C78C5D /* SwifterOSXTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		44AA6C4720AB8F78003A21BB = {
 			isa = PBXGroup;
 			children = (
-				4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */,
 				44AA6C5220AB8F79003A21BB /* StockSim */,
 				44AA6C6720AB8F79003A21BB /* StockSimTests */,
 				44AA6C7220AB8F79003A21BB /* StockSimUITests */,
@@ -271,7 +204,7 @@
 				44AA6C4D20AB8F78003A21BB /* Frameworks */,
 				44AA6C4E20AB8F78003A21BB /* Resources */,
 				A7A8C6D9B4AB20F455849967 /* [CP] Embed Pods Frameworks */,
-				8BD24357D6B236B2F44ED693 /* [CP] Copy Pods Resources */,
+				FE874D963A5E8773FBE0DBEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,12 +290,6 @@
 			mainGroup = 44AA6C4720AB8F78003A21BB;
 			productRefGroup = 44AA6C5120AB8F79003A21BB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4412BF7920B73E4800C78C5D /* Products */;
-					ProjectRef = 4412BF7820B73E4800C78C5D /* Swifter.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				44AA6C4F20AB8F78003A21BB /* StockSim */,
@@ -371,58 +298,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4412BF8320B73E4800C78C5D /* .app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = .app;
-			remoteRef = 4412BF8220B73E4800C78C5D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4412BF8520B73E4800C78C5D /* SwifterSampleOSX */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = SwifterSampleOSX;
-			remoteRef = 4412BF8420B73E4800C78C5D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4412BF8720B73E4800C78C5D /* Swifter.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Swifter.framework;
-			remoteRef = 4412BF8620B73E4800C78C5D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4412BF8920B73E4800C78C5D /* Swifter.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Swifter.framework;
-			remoteRef = 4412BF8820B73E4800C78C5D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4412BF8B20B73E4800C78C5D /* Swifter.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Swifter.framework;
-			remoteRef = 4412BF8A20B73E4800C78C5D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4412BF8D20B73E4800C78C5D /* SwifteriOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwifteriOSTests.xctest;
-			remoteRef = 4412BF8C20B73E4800C78C5D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4412BF8F20B73E4800C78C5D /* SwifterOSXTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwifterOSXTests.xctest;
-			remoteRef = 4412BF8E20B73E4800C78C5D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		44AA6C4E20AB8F78003A21BB /* Resources */ = {
@@ -489,26 +364,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8BD24357D6B236B2F44ED693 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StockSim/Pods-StockSim-resources.sh",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockSim/Pods-StockSim-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A7A8C6D9B4AB20F455849967 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,6 +408,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE874D963A5E8773FBE0DBEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockSim/Pods-StockSim-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockSim/Pods-StockSim-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -8,8 +8,8 @@
 
 import UIKit
 import Firebase
-import FacebookCore
 
+import TwitterKit
 
 
 @UIApplicationMain
@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-       
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"9a1LPNy5eoomys5py02SOoZX4", consumerSecret:"DjgTRvTQcw19oLKWcHgDwnbgzHgRo6iMjfmoQjqp2rNR1y2iDb")
         return true
     }
 

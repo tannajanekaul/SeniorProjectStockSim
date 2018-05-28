@@ -9,7 +9,7 @@ target 'StockSim' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
-  pod 'TwitterKit'
+  pod 'TwitterKit'  
 
   target 'StockSimTests' do
     inherit! :search_paths
