@@ -9,22 +9,22 @@
 import UIKit
 
 class CelebrityTableViewCell: UITableViewCell {
-
+    var user: Profile?
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var stockPriceTextField: UITextField!
+    @IBOutlet weak var buyButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    @IBAction func buyButton(_ sender: Any) {
-    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-       // tableView.register(MyTableViewCell.self, forCellReuseIdentifier: "Cell")
+        //tableView.register(MyTableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
 }

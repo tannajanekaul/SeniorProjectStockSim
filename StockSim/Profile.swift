@@ -12,6 +12,8 @@ import UIKit
 class Profile{
     var name: String
     var money: Int
+    //var map: [String:Int]
+    var celebStockList:[(celeb: Celebrity, shares: Int)]
     
     init?(name: String, money: Int){
         if (name.isEmpty){
@@ -19,5 +21,6 @@ class Profile{
         }
         self.name = name
         self.money = money
+        self.celebStockList = []
     }
 }

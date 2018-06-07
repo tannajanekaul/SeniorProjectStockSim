@@ -8,13 +8,16 @@
 
 
 import UIKit
-import SwifteriOS
+import TwitterKit
+import Firebase
 
 class CelebrityTableViewController: UITableViewController {
-
+    var user: Profile?
+    var ref: DatabaseReference!
     var celebrities = [Celebrity]()
     var thisData: Data?
     var thisResponce: URLResponse?
+    var globalTableView: UITableView?
     //var i : Int
     var userfollowing : Int?
     let useACAccount = true
@@ -25,22 +28,57 @@ class CelebrityTableViewController: UITableViewController {
         loadSampleCelebs()
     }
 
-    func loadSampleCelebs() {
-        let swifter =   Swifter(consumerKey: "9a1LPNy5eoomys5py02SOoZX4", consumerSecret: "DjgTRvTQcw19oLKWcHgDwnbgzHgRo6iMjfmoQjqp2rNR1y2iDb", appOnly: true)
-        swifter.authorizeAppOnly(success: { (accessToken, response) -> Void in
-            //  println("\(accessToken)")
-           // self.userfollowing = swifter.getUserFollowing(for: .screenName("KimKardashian") )
-           /* swifter.getSearchTweetsWithQuery("Kim Kardashian", geocode: "", lang: "", locale: "", resultType: "", count: 150, until: "", sinceID: "2009-01-01", maxID: "", includeEntities: true, callback: "", success: { (statuses, searchMetadata) -> Void in
-                print(statuses)
+    @IBAction func buyButton(_ sender: UIButton) {
+        ref = Database.database().reference()
+        let celebPrice = sender.tag
+        //sender is the buy button and sender's tag is the celebrities price
+        //does the user have enough money to buy the stock
+        if ((user?.money)! >= celebPrice){
+            //yes they do.
+            
+            //subtract the user's money in the object
+            user?.money = (user?.money)! - celebPrice
+            //subtract the user's money in the database
+            let userID = Auth.auth().currentUser?.uid
+            self.ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+                let value = snapshot.value as? NSDictionary
+                let username = value?["username"] as? String ?? ""
+                var userMoney = value?["money"] as? Int
                 
-            }) { (error) -> Void in
-                print(error)
-            }*/
-            // println("\(response)")
-        }, failure: { (error) -> Void in
-            //  println(error)
-        })
+                //subtract userMoney by stock price
+                userMoney = userMoney! - celebPrice
+                
+                //update the value in the database
+                let childUpdates = ["/users/" + userID! + "/money": userMoney]
+                self.ref.updateChildValues(childUpdates)
+                
+                //update the user object
+                //self.user.money = userMoney!
+                
+                //update the text field
+                //self.moneyTextField.text = String(self.user.money)
+                
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+            //add the stock to the user's object
+            
+            //add the stock to the user's object in the database
+        }
+        else{
+            let alertController = UIAlertController(title: "Error", message: "You do not have enough money to purchase this stock.", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
         
+    }
+
+    func loadSampleCelebs() {
+
         let photo1 = UIImage(named: "kimkardashian")
         let photo2 = UIImage(named: "jkrowling")
         let photo3 = UIImage(named: "drake")
@@ -50,30 +88,40 @@ class CelebrityTableViewController: UITableViewController {
         let photo7 = UIImage(named: "travisscott")
         let photo8 = UIImage(named: "kyliejenner")
         
-        guard let kim = Celebrity(name: "Kim Kardashian", price: 1000, photo: photo1!) else {
+        let kimPrice = 30
+        let jkPrice = 1000
+        let drakePrice = 1000
+        let beyoncePrice = 1000
+        let diddyPrice = 1000
+        let elonPrice = 1000
+        let travisPrice = 1000
+        let kyliePrice = 1000
+        
+        
+        guard let kim = Celebrity(name: "Kim Kardashian", price: kimPrice, photo: photo1!) else {
             fatalError("Unable to instantiate celeb")
         }
         
-        guard let jk = Celebrity(name: "JK Rowling", price: 1000, photo: photo2!) else {
+        guard let jk = Celebrity(name: "JK Rowling", price: jkPrice, photo: photo2!) else {
             fatalError("Unable to instantiate celeb")
         }
         
-        guard let drake = Celebrity(name: "Drake", price: 1000, photo: photo3!) else {
+        guard let drake = Celebrity(name: "Drake", price: drakePrice, photo: photo3!) else {
             fatalError("Unable to instantiate celeb")
         }
-        guard let beyonce = Celebrity(name: "Beyonce", price: 1000, photo: photo4!) else {
+        guard let beyonce = Celebrity(name: "Beyonce", price: beyoncePrice, photo: photo4!) else {
             fatalError("Unable to instantiate celeb")
         }
-        guard let diddy = Celebrity(name: "Diddy", price: 1000, photo: photo5!) else {
+        guard let diddy = Celebrity(name: "Diddy", price: diddyPrice, photo: photo5!) else {
             fatalError("Unable to instantiate celeb")
         }
-        guard let elonmusk = Celebrity(name: "Elon Musk", price: 1000, photo: photo6!) else {
+        guard let elonmusk = Celebrity(name: "Elon Musk", price: elonPrice, photo: photo6!) else {
             fatalError("Unable to instantiate celeb")
         }
-        guard let travisscott = Celebrity(name: "Travis Scott", price: 1000, photo: photo7!) else {
+        guard let travisscott = Celebrity(name: "Travis Scott", price: travisPrice, photo: photo7!) else {
             fatalError("Unable to instantiate celeb")
         }
-        guard let kyliejenner = Celebrity(name: "Kylie Jenner", price: 1000, photo: photo8!) else {
+        guard let kyliejenner = Celebrity(name: "Kylie Jenner", price: kyliePrice, photo: photo8!) else {
             fatalError("Unable to instantiate celeb")
         }
         celebrities += [kim,jk,drake,beyonce,diddy,elonmusk,travisscott,kyliejenner]
@@ -96,7 +144,7 @@ class CelebrityTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        globalTableView = tableView
         let cellIdentifier = "CelebrityTableViewCell"
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CelebrityTableViewCell  else {
@@ -107,7 +155,8 @@ class CelebrityTableViewController: UITableViewController {
         cell.nameLabel.text = celebrity.name
         cell.photoImageView.image = celebrity.photo
         cell.stockPriceTextField.text = String(celebrity.price)
-
+        //let celebString = celebrity.name + " " + String(celebrity.price)
+        cell.buyButton.tag = celebrity.price
         return cell
     }
     

@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.65351529644392348" green="0.79332504279152372" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PB4-mv-onP"/>
@@ -114,7 +114,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.65351529639999995" green="0.79332504280000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="u9z-bY-G0B" firstAttribute="leading" secondItem="a65-3D-R5Q" secondAttribute="leading" constant="16" id="1cX-ld-mtA"/>
                             <constraint firstItem="a65-3D-R5Q" firstAttribute="trailing" secondItem="wj4-gz-y8R" secondAttribute="trailing" constant="127" id="954-Xx-5A9"/>
@@ -131,7 +131,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a65-3D-R5Q"/>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.65351529639999995" green="0.79332504280000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="pPd-uM-Nen"/>
@@ -165,13 +165,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlv-9e-uF7">
-                                            <rect key="frame" x="98" y="11" width="119" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stock Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWH-Wy-YHa">
                                             <rect key="frame" x="98" y="46" width="92" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -186,19 +179,26 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-NP-Vcw">
-                                            <rect key="frame" x="321" y="29" width="30" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE6-db-6RZ">
+                                            <rect key="frame" x="321" y="30" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                             <state key="normal" title="Buy"/>
                                             <connections>
-                                                <action selector="buyButton:" destination="isE-Ir-xHJ" eventType="touchUpInside" id="nbT-sN-hN3"/>
+                                                <action selector="buyButton:" destination="eU0-gn-UGl" eventType="touchUpInside" id="Ilo-NR-caN"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiC-zr-Rl0">
+                                            <rect key="frame" x="98" y="11" width="92" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="nameLabel" destination="tlv-9e-uF7" id="Yi9-XL-5wE"/>
+                                    <outlet property="buyButton" destination="lE6-db-6RZ" id="Bhd-pS-5ED"/>
+                                    <outlet property="nameLabel" destination="IiC-zr-Rl0" id="k3y-xv-BEN"/>
                                     <outlet property="photoImageView" destination="Udf-zN-MoA" id="j5u-Fc-4tC"/>
                                     <outlet property="stockPriceTextField" destination="iLK-MF-lYv" id="5LD-nL-0cq"/>
                                 </connections>
@@ -212,7 +212,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfG-VS-O40" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="1797"/>
+            <point key="canvasLocation" x="-39.200000000000003" y="1796.8515742128936"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="gvD-a0-MHz">

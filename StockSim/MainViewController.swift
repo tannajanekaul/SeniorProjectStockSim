@@ -36,8 +36,17 @@ class MainViewController: UIViewController {
             if let destination = segue.destination as? ProfileViewController {
                 destination.user = self.user
             }
-        
+            if let destination = segue.destination as?
+                CelebrityTableViewCell {
+                destination.user = self.user
+            }
+            if let destination = segue.destination as?
+                CelebrityTableViewController {
+                destination.user = self.user
+            }
     }
+        
+
     override func viewWillAppear(_ animated: Bool) {
         usernameTextField.text = user.name
         moneyTextField.text = String(user.money)
