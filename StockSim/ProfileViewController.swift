@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController {
             var userMoney = value?["money"] as? Int
            
             //add 1 dollar to user's money
-            userMoney = userMoney! + 1
+            userMoney = userMoney! + 100000
             
             //update the value in the database
             let childUpdates = ["/users/" + userID! + "/money": userMoney]

@@ -14,9 +14,15 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var moneyTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameTextField.text = user.name
+        //self.navigationController?.navigationBar.isHidden = false
+        let username = user.name
+        let usernameArray = username.components(separatedBy: "@")
+        let currentName = usernameArray[0]
+        
+        usernameTextField.text = currentName
         moneyTextField.text = String(user.money)
         
         // Do any additional setup after loading the view.
@@ -44,11 +50,19 @@ class MainViewController: UIViewController {
                 CelebrityTableViewController {
                 destination.user = self.user
             }
+            if let destination = segue.destination as?
+                SettingsViewController {
+                destination.user = self.user
+            }
     }
         
 
     override func viewWillAppear(_ animated: Bool) {
-        usernameTextField.text = user.name
+        let username = user.name
+        let usernameArray = username.components(separatedBy: "@")
+        let currentName = usernameArray[0]
+        
+        usernameTextField.text = currentName
         moneyTextField.text = String(user.money)
     }
     override func viewDidAppear(_ animated: Bool) {

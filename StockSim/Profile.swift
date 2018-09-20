@@ -15,12 +15,12 @@ class Profile{
     //var map: [String:Int]
     var celebStockList:[(celeb: Celebrity, shares: Int)]
     
-    init?(name: String, money: Int){
+    init?(name: String, money: Int,celebStockList:[(celeb: Celebrity, shares: Int)]){
         if (name.isEmpty){
             return nil
         }
         self.name = name
         self.money = money
-        self.celebStockList = []
+        self.celebStockList = celebStockList
     }
 }

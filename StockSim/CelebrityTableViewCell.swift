@@ -10,10 +10,12 @@ import UIKit
 
 class CelebrityTableViewCell: UITableViewCell {
     var user: Profile?
+    var currentCelebIntIdentifier: Int?
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var stockPriceTextField: UITextField!
     @IBOutlet weak var buyButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

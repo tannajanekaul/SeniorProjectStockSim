@@ -9,7 +9,7 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    var user: Profile?
     @IBOutlet weak var settingsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +23,16 @@ class SettingsViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+     //In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? MainViewController {
+            destination.user = self.user
+        }
     }
-    */
+    
 
 }

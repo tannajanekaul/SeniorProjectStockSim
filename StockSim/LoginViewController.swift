@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import CoreFoundation
 
 class LoginViewController: UIViewController {
     var handle: AuthStateDidChangeListenerHandle?
@@ -28,13 +28,18 @@ class LoginViewController: UIViewController {
                     let value = snapshot.value as? NSDictionary
                     let username = value?["username"] as? String ?? ""
                     let money = value?["money"] as? Int
-                    self.user = Profile(name: username, money:money!)
+                    //var celebStockList = value?["celebStockList"] as? [(celeb: Celebrity, shares: Int)]
+                    self.user = Profile(name: username, money:money!,celebStockList: [])
+                    
+                    
+                    
+                    
                     
                     let mainView = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
                     mainView.user = self.user
-                   // self.performSegue(withIdentifier: "MainViewController", sender: Any?.self)
-                    self.navigationController?.pushViewController(mainView, animated: true)
-                    //self.present(mainView, animated: true, completion: nil)
+                    //self.performSegue(withIdentifier: "MainViewController", sender: Any?.self)
+                    //self.navigationController?.pushViewController(mainView, animated: true)
+                    self.present(mainView, animated: true, completion: nil)
                 }) { (error) in
                     print(error.localizedDescription)
                 }

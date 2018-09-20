@@ -20,5 +20,7 @@ class Celebrity{
         self.name = name
         self.price = price
         self.photo = photo
+        
     }
+
 }

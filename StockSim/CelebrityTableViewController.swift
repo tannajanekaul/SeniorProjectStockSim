@@ -16,6 +16,7 @@ class CelebrityTableViewController: UITableViewController {
     var ref: DatabaseReference!
     var celebrities = [Celebrity]()
     var thisData: Data?
+    var indexToCelebMap = [Int : Celebrity]()
     var thisResponce: URLResponse?
     var globalTableView: UITableView?
     //var i : Int
@@ -24,59 +25,29 @@ class CelebrityTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       // self.navigationController?.navigationBar.isHidden = false
         loadSampleCelebs()
     }
 
-    @IBAction func buyButton(_ sender: UIButton) {
-        ref = Database.database().reference()
-        let celebPrice = sender.tag
-        //sender is the buy button and sender's tag is the celebrities price
-        //does the user have enough money to buy the stock
-        if ((user?.money)! >= celebPrice){
-            //yes they do.
-            
-            //subtract the user's money in the object
-            user?.money = (user?.money)! - celebPrice
-            //subtract the user's money in the database
-            let userID = Auth.auth().currentUser?.uid
-            self.ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-                // Get user value
-                let value = snapshot.value as? NSDictionary
-                let username = value?["username"] as? String ?? ""
-                var userMoney = value?["money"] as? Int
-                
-                //subtract userMoney by stock price
-                userMoney = userMoney! - celebPrice
-                
-                //update the value in the database
-                let childUpdates = ["/users/" + userID! + "/money": userMoney]
-                self.ref.updateChildValues(childUpdates)
-                
-                //update the user object
-                //self.user.money = userMoney!
-                
-                //update the text field
-                //self.moneyTextField.text = String(self.user.money)
-                
-            }) { (error) in
-                print(error.localizedDescription)
-            }
-            //add the stock to the user's object
-            
-            //add the stock to the user's object in the database
-        }
-        else{
-            let alertController = UIAlertController(title: "Error", message: "You do not have enough money to purchase this stock.", preferredStyle: .alert)
-            
-            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alertController.addAction(defaultAction)
-            
-            self.present(alertController, animated: true, completion: nil)
-        }
-        
+    
+    @IBAction func sellButton(_ sender: UIButton) {
+        let celebIndex = sender.tag
+        let sellStockView = self.storyboard?.instantiateViewController(withIdentifier: "SellStockViewController") as! SellStockViewController
+        sellStockView.celebToBuyInt = celebIndex
+        sellStockView.user = self.user
+        sellStockView.indexToCelebMap = self.indexToCelebMap
+        self.present(sellStockView, animated: true, completion: nil)
     }
-
+    
+    @IBAction func buyButton(_ sender: UIButton) {
+        let celebIndex = sender.tag
+        let buyStockView = self.storyboard?.instantiateViewController(withIdentifier: "BuyStockViewController") as! BuyStockViewController
+        buyStockView.celebToBuyInt = celebIndex
+        buyStockView.user = self.user
+        buyStockView.indexToCelebMap = self.indexToCelebMap
+        self.present(buyStockView, animated: true, completion: nil)
+    }
+    
     func loadSampleCelebs() {
 
         let photo1 = UIImage(named: "kimkardashian")
@@ -88,15 +59,48 @@ class CelebrityTableViewController: UITableViewController {
         let photo7 = UIImage(named: "travisscott")
         let photo8 = UIImage(named: "kyliejenner")
         
-        let kimPrice = 30
-        let jkPrice = 1000
-        let drakePrice = 1000
-        let beyoncePrice = 1000
-        let diddyPrice = 1000
-        let elonPrice = 1000
-        let travisPrice = 1000
-        let kyliePrice = 1000
+        let kimPrice = 100
+        let jkPrice = 100
+        let drakePrice = 100
+        let beyoncePrice = 100
+        let diddyPrice = 100
+        let elonPrice = 100
+        let travisPrice = 100
+        let kyliePrice = 100
         
+       /* let url = URL(string: "https://twitter.com/kimkardashian")
+        let task = URLSession.shared.dataTask(with:url!){ (data,response,error) in
+            if error != nil
+            {
+                DispatchQueue.main.async {
+                    if let errorMessage = error?.localizedDescription
+                    {
+                        //error, put error message
+                    }else{
+                        //error, put error message
+                    }
+                }
+            }else {
+                let webContent:String = String(data:data!,encoding: String.Encoding.utf8)!
+                //get the name
+                var array:[String] = webContent.components(separatedBy: "<title>")
+                array = array[1].components(separatedBy: " |")
+                let name = array[0]
+                array.removeAll()
+                
+                //get the profile picture
+                array = webContent.components(separatedBy: "data-resolved-url-large=\"")
+                array = array[1].components(separatedBy: "\"")
+                let profilePicture = array[0]
+                print(profilePicture)
+                
+                //get the tweets
+                array = webContent.components(separatedBy: "data-aria-label-part=\"0\">")
+                array.remove(at: 0)
+                
+            }
+        }
+        task.resume() */
         
         guard let kim = Celebrity(name: "Kim Kardashian", price: kimPrice, photo: photo1!) else {
             fatalError("Unable to instantiate celeb")
@@ -125,6 +129,7 @@ class CelebrityTableViewController: UITableViewController {
             fatalError("Unable to instantiate celeb")
         }
         celebrities += [kim,jk,drake,beyonce,diddy,elonmusk,travisscott,kyliejenner]
+        
         
     }
     override func didReceiveMemoryWarning() {
@@ -156,10 +161,34 @@ class CelebrityTableViewController: UITableViewController {
         cell.photoImageView.image = celebrity.photo
         cell.stockPriceTextField.text = String(celebrity.price)
         //let celebString = celebrity.name + " " + String(celebrity.price)
-        cell.buyButton.tag = celebrity.price
+        cell.buyButton.tag = indexPath.row
+        indexToCelebMap[indexPath.row] = celebrity
+        
         return cell
     }
     
+    func celebNameToInt(celebName: String) -> Int{
+        var returnVar = ""
+        
+        for c in celebName {
+            let x = c
+            let letterInt = String(mapToInt(letter: String(c))) + " "
+            returnVar = returnVar + letterInt
+        }
+        return Int(returnVar)!
+        
+    }
+    
+    func mapToInt(letter: String) -> Int{
+        var returnInt = 0
+        switch (letter) {
+        case " ":
+            returnInt = 0
+        default:
+            break
+        }
+        return returnInt
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -196,14 +225,23 @@ class CelebrityTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let destination = segue.destination as?
+            MainViewController {
+            destination.user = self.user
+        }
+        
+        if let destination = segue.destination as?
+            SellStockViewController {
+            destination.user = self.user
+        }
     }
-    */
+
 
 }

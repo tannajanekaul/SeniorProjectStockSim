@@ -23,6 +23,8 @@
 		44AA6C9020ABA4B3003A21BB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA6C8F20ABA4B3003A21BB /* ProfileViewController.swift */; };
 		44AA6C9220ABABE8003A21BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44AA6C9120ABABE8003A21BB /* GoogleService-Info.plist */; };
 		44E833CD20ACE53B006D66DE /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E833CC20ACE53B006D66DE /* Celebrity.swift */; };
+		44ED111F20CB184500B1D54B /* BuyStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED111E20CB184500B1D54B /* BuyStockViewController.swift */; };
+		44ED112120CB1EDD00B1D54B /* SellStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ED112020CB1EDD00B1D54B /* SellStockViewController.swift */; };
 		44FE5E7B20B22223005C1260 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE5E7A20B22223005C1260 /* SettingsViewController.swift */; };
 		930576C9E8439792C0E0B406 /* Pods_StockSimTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDF09E5E53EFE917037CCFA /* Pods_StockSimTests.framework */; };
 		BCCAC5E86003AD6468D086FC /* Pods_StockSimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F77CDFEFFDFBCCEA701602B /* Pods_StockSimUITests.framework */; };
@@ -69,6 +71,8 @@
 		44AA6C8F20ABA4B3003A21BB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		44AA6C9120ABABE8003A21BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		44E833CC20ACE53B006D66DE /* Celebrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
+		44ED111E20CB184500B1D54B /* BuyStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyStockViewController.swift; sourceTree = "<group>"; };
+		44ED112020CB1EDD00B1D54B /* SellStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellStockViewController.swift; sourceTree = "<group>"; };
 		44FE5E7A20B22223005C1260 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		50CB816A3785C17F5C324E4C /* Pods-StockSim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockSim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockSim/Pods-StockSim.debug.xcconfig"; sourceTree = "<group>"; };
 		5ED1238C08FE60FBEF08C84C /* Pods-StockSimTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockSimTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockSimTests/Pods-StockSimTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,7 +150,9 @@
 				44E833CC20ACE53B006D66DE /* Celebrity.swift */,
 				440BBE7F20AD39E500EFEB4C /* CelebrityTableViewCell.swift */,
 				440BBE8120AD3AEF00EFEB4C /* CelebrityTableViewController.swift */,
+				44ED111E20CB184500B1D54B /* BuyStockViewController.swift */,
 				44FE5E7A20B22223005C1260 /* SettingsViewController.swift */,
+				44ED112020CB1EDD00B1D54B /* SellStockViewController.swift */,
 			);
 			path = StockSim;
 			sourceTree = "<group>";
@@ -441,8 +447,10 @@
 				44AA6C8C20AB9E5E003A21BB /* LoginViewController.swift in Sources */,
 				44AA6C5620AB8F79003A21BB /* ViewController.swift in Sources */,
 				44FE5E7B20B22223005C1260 /* SettingsViewController.swift in Sources */,
+				44ED111F20CB184500B1D54B /* BuyStockViewController.swift in Sources */,
 				44AA6C8420AB94DD003A21BB /* Profile.swift in Sources */,
 				44E833CD20ACE53B006D66DE /* Celebrity.swift in Sources */,
+				44ED112120CB1EDD00B1D54B /* SellStockViewController.swift in Sources */,
 				440BBE8020AD39E500EFEB4C /* CelebrityTableViewCell.swift in Sources */,
 				44AA6C5420AB8F79003A21BB /* AppDelegate.swift in Sources */,
 				44AA6C8E20ABA231003A21BB /* MainViewController.swift in Sources */,
