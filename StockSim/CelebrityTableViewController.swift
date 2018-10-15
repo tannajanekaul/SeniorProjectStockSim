@@ -10,6 +10,7 @@
 import UIKit
 import TwitterKit
 import Firebase
+import Foundation
 
 class CelebrityTableViewController: UITableViewController {
     var user: Profile?
@@ -50,6 +51,7 @@ class CelebrityTableViewController: UITableViewController {
     
     func loadSampleCelebs() {
 
+        let numCelebs = 8
         let photo1 = UIImage(named: "kimkardashian")
         let photo2 = UIImage(named: "jkrowling")
         let photo3 = UIImage(named: "drake")
@@ -59,6 +61,25 @@ class CelebrityTableViewController: UITableViewController {
         let photo7 = UIImage(named: "travisscott")
         let photo8 = UIImage(named: "kyliejenner")
         
+       // for i in 0...numCelebs {
+            // Create a process (was NSTask on swift pre 3.0)
+            let task = NS.self;
+            
+            // Set the task parameters
+            task.arguments = ["twitterscraper \"Elon Musk\" -o twitterscraper_output.json -l 1000"]
+        // }
+        let pipe = Pipe()
+        task.standardOutput = pipe
+    
+        
+        // Get the data
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let output = NSString(data: data, encoding: NSUTF8StringEncoding)
+        
+        print(output!)
+ //           let output = String(data: data, encoding: String.Encoding.utf8)
+   //         print(output!)
+        
         let kimPrice = 100
         let jkPrice = 100
         let drakePrice = 100
@@ -67,40 +88,6 @@ class CelebrityTableViewController: UITableViewController {
         let elonPrice = 100
         let travisPrice = 100
         let kyliePrice = 100
-        
-       /* let url = URL(string: "https://twitter.com/kimkardashian")
-        let task = URLSession.shared.dataTask(with:url!){ (data,response,error) in
-            if error != nil
-            {
-                DispatchQueue.main.async {
-                    if let errorMessage = error?.localizedDescription
-                    {
-                        //error, put error message
-                    }else{
-                        //error, put error message
-                    }
-                }
-            }else {
-                let webContent:String = String(data:data!,encoding: String.Encoding.utf8)!
-                //get the name
-                var array:[String] = webContent.components(separatedBy: "<title>")
-                array = array[1].components(separatedBy: " |")
-                let name = array[0]
-                array.removeAll()
-                
-                //get the profile picture
-                array = webContent.components(separatedBy: "data-resolved-url-large=\"")
-                array = array[1].components(separatedBy: "\"")
-                let profilePicture = array[0]
-                print(profilePicture)
-                
-                //get the tweets
-                array = webContent.components(separatedBy: "data-aria-label-part=\"0\">")
-                array.remove(at: 0)
-                
-            }
-        }
-        task.resume() */
         
         guard let kim = Celebrity(name: "Kim Kardashian", price: kimPrice, photo: photo1!) else {
             fatalError("Unable to instantiate celeb")
