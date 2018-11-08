@@ -8,9 +8,9 @@
 
 
 import UIKit
-import TwitterKit
 import Firebase
 import Foundation
+import SwiftSoup
 
 class CelebrityTableViewController: UITableViewController {
     var user: Profile?
@@ -20,16 +20,17 @@ class CelebrityTableViewController: UITableViewController {
     var indexToCelebMap = [Int : Celebrity]()
     var thisResponce: URLResponse?
     var globalTableView: UITableView?
-    //var i : Int
+    var x: Int = 0;
     var userfollowing : Int?
     let useACAccount = true
+    let semaphore = DispatchSemaphore(value: 1)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
        // self.navigationController?.navigationBar.isHidden = false
         loadSampleCelebs()
     }
-
     
     @IBAction func sellButton(_ sender: UIButton) {
         let celebIndex = sender.tag
@@ -50,75 +51,202 @@ class CelebrityTableViewController: UITableViewController {
     }
     
     func loadSampleCelebs() {
-
+        let bool = true;
         let numCelebs = 8
         let photo1 = UIImage(named: "kimkardashian")
-        let photo2 = UIImage(named: "jkrowling")
+        let photo2 = UIImage(named: "jk_rowling")
         let photo3 = UIImage(named: "drake")
         let photo4 = UIImage(named: "beyonce")
         let photo5 = UIImage(named: "diddy")
         let photo6 = UIImage(named: "elonmusk")
-        let photo7 = UIImage(named: "travisscott")
+        let photo7 = UIImage(named: "trvisXX")
         let photo8 = UIImage(named: "kyliejenner")
-        
-       // for i in 0...numCelebs {
-            // Create a process (was NSTask on swift pre 3.0)
-            let task = NS.self;
-            
-            // Set the task parameters
-            task.arguments = ["twitterscraper \"Elon Musk\" -o twitterscraper_output.json -l 1000"]
-        // }
-        let pipe = Pipe()
-        task.standardOutput = pipe
     
         
-        // Get the data
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let output = NSString(data: data, encoding: NSUTF8StringEncoding)
+        var kimPrice = -1;
+        var jkPrice = -1
+        var drakePrice = -1
+        var beyoncePrice = -1
+        var diddyPrice = -1
+        var elonPrice = -1
+        var travisPrice = -1
+        var kyliePrice = -1
+        var count = 0
         
-        print(output!)
- //           let output = String(data: data, encoding: String.Encoding.utf8)
-   //         print(output!)
+        guard let kim = Celebrity(name: "Kim Kardashian", price: kimPrice, photo: photo1!,index: count) else {
+            fatalError("Unable to instantiate celeb")
+        }
+        count = count+1
+        guard let jk = Celebrity(name: "JK Rowling", price: jkPrice, photo: photo2!,index: count) else {
+            fatalError("Unable to instantiate celeb")
+        }
+        count = count+1
+        guard let drake = Celebrity(name: "Drake", price: drakePrice, photo: photo3!,index:count) else {
+            fatalError("Unable to instantiate celeb")
+        }
+        count = count+1
+        guard let beyonce = Celebrity(name: "Beyonce", price: beyoncePrice, photo: photo4!, index: count) else {
+            fatalError("Unable to instantiate celeb")
+        }
+        count = count+1
+        guard let diddy = Celebrity(name: "Diddy", price: diddyPrice, photo: photo5!,index: count) else {
+            fatalError("Unable to instantiate celeb")
+        }
+        count = count+1
+        guard let elonmusk = Celebrity(name: "Elon Musk", price: elonPrice, photo: photo6!, index: count) else {
+            fatalError("Unable to instantiate celeb")
+        }
+        count = count+1
+        guard let travisscott = Celebrity(name: "Travis Scott", price: travisPrice, photo: photo7!, index: count) else {
+            fatalError("Unable to instantiate celeb")
+        }
+        count = count+1
+        guard let kyliejenner = Celebrity(name: "Kylie Jenner", price: kyliePrice, photo: photo8!, index: count) else {
+            fatalError("Unable to instantiate celeb")
+        }
+        count = count+1
         
-        let kimPrice = 100
-        let jkPrice = 100
-        let drakePrice = 100
-        let beyoncePrice = 100
-        let diddyPrice = 100
-        let elonPrice = 100
-        let travisPrice = 100
-        let kyliePrice = 100
+        if (!bool) {
+            kimPrice = getPriceFromScrape(celebName: "kimkardashian", index: kim.index)
+            jkPrice = getPriceFromScrape(celebName: "jk_rowling", index: jk.index)
+            drakePrice = getPriceFromScrape(celebName: "drake",index: drake.index)
+            beyoncePrice = getPriceFromScrape(celebName: "beyonce",index: beyonce.index)
+            diddyPrice = getPriceFromScrape(celebName: "diddy",index: diddy.index)
+            elonPrice = getPriceFromScrape(celebName: "elonmusk",index: elonmusk.index)
+            travisPrice = getPriceFromScrape(celebName: "trvisXX",index: travisscott.index)
+            kyliePrice = getPriceFromScrape(celebName: "kyliejenner",index: kyliejenner.index)
+        } else {
+            kimPrice = getPriceFromDB(celebName: "kimkardashian",index: kim.index)
+            jkPrice = getPriceFromDB(celebName: "jk_rowling",index: jk.index)
+            drakePrice = getPriceFromDB(celebName: "drake",index: drake.index)
+            beyoncePrice = getPriceFromDB(celebName: "beyonce",index: beyonce.index)
+            diddyPrice = getPriceFromDB(celebName: "diddy", index: diddy.index)
+            elonPrice = getPriceFromDB(celebName: "elonmusk",index: elonmusk.index)
+            travisPrice = getPriceFromDB(celebName: "trvisXX",index: travisscott.index)
+            kyliePrice = getPriceFromDB(celebName: "kyliejenner",index: kyliejenner.index)
+        }
+
+        kim.price = kimPrice;
+        jk.price = jkPrice;
+        drake.price = drakePrice;
+        beyonce.price = beyoncePrice;
+        diddy.price = diddyPrice;
+        elonmusk.price = elonPrice;
+        travisscott.price = travisPrice;
+        kyliejenner.price = kyliePrice;
         
-        guard let kim = Celebrity(name: "Kim Kardashian", price: kimPrice, photo: photo1!) else {
-            fatalError("Unable to instantiate celeb")
-        }
-        
-        guard let jk = Celebrity(name: "JK Rowling", price: jkPrice, photo: photo2!) else {
-            fatalError("Unable to instantiate celeb")
-        }
-        
-        guard let drake = Celebrity(name: "Drake", price: drakePrice, photo: photo3!) else {
-            fatalError("Unable to instantiate celeb")
-        }
-        guard let beyonce = Celebrity(name: "Beyonce", price: beyoncePrice, photo: photo4!) else {
-            fatalError("Unable to instantiate celeb")
-        }
-        guard let diddy = Celebrity(name: "Diddy", price: diddyPrice, photo: photo5!) else {
-            fatalError("Unable to instantiate celeb")
-        }
-        guard let elonmusk = Celebrity(name: "Elon Musk", price: elonPrice, photo: photo6!) else {
-            fatalError("Unable to instantiate celeb")
-        }
-        guard let travisscott = Celebrity(name: "Travis Scott", price: travisPrice, photo: photo7!) else {
-            fatalError("Unable to instantiate celeb")
-        }
-        guard let kyliejenner = Celebrity(name: "Kylie Jenner", price: kyliePrice, photo: photo8!) else {
-            fatalError("Unable to instantiate celeb")
-        }
         celebrities += [kim,jk,drake,beyonce,diddy,elonmusk,travisscott,kyliejenner]
         
         
     }
+//    func callDB(indexVal) {
+//        var celebMoney = nil;
+//        ref.child("celebs").child(indexVal!).observeSingleEvent(of: .value, with: { (snapshot) in
+//            // Get user value
+//            let value = snapshot.value as? NSDictionary
+//            celebMoney = (value?["money"] as? Int)!
+//            //let user = User(username: username)
+//
+//            // ...
+//        }) { (error) in
+//            print(error.localizedDescription)
+//        }
+//    }
+    
+    func getPriceFromDB(celebName: String, index: Int) -> Int {
+        ref = Database.database().reference()
+        let indexVal: String? = String(index)
+        var moneyReturn: Int = -1;
+        var celebMoney: Int = -1;
+        //down the semaphore
+        print("first wait semaphore");
+        semaphore.wait()
+        ref.child("celebs").child(indexVal!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            print("hello inside db");
+            let value = snapshot.value as? NSDictionary
+            celebMoney = (value?["money"] as? Int)!
+            //let user = User(username: username)
+            self.semaphore.signal()
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        // up the semaphore
+        
+        print("waiting for the semaphore");
+        semaphore.wait()
+        print("semaphore open now");
+        moneyReturn = celebMoney
+        semaphore.signal()
+        return moneyReturn;
+    }
+    
+    func getPriceFromScrape(celebName: String, index: Int)  -> Int {
+        let urlString = "https://twitter.com/" + celebName
+        let url = URL(string: urlString)
+        
+        let request = URLRequest(url: url!)
+        
+        guard let myURL = url else {
+            print("Error: \(String(describing: url)) doesn't seem to be a valid URL")
+            return -1;
+        }
+        
+        let html = try! String(contentsOf: myURL, encoding: .utf8)
+        
+        do {
+            let doc: Document = try SwiftSoup.parseBodyFragment(html)
+            let headerTitle = try doc.title()
+            
+            // my body
+            let body = doc.body()
+            do {
+                let followerElement: Element? = try body?.getElementById("page-container");
+                //print(followerElement)
+                let child = try followerElement?.child(1).text()
+                
+                let stringArray = child?.split(separator: " ");
+
+                var followerIndex: Int = 0;
+                var i: Int = 0
+                for elem in stringArray! {
+                    print("Index[", i , "] =" , elem)
+                    if (elem == "Followers") {
+                        followerIndex = i + 1;
+                    }
+                    i = i+1
+                }
+                
+                var followerString = stringArray![followerIndex]
+                followerString = followerString.dropLast()
+                var newString = String(followerString)
+                //print("[", followerString,"]")
+                let myFloat = (newString as NSString).doubleValue
+                //print(myFloat);
+                
+                let moneyValue = Int(myFloat*1000)
+                
+                let intVal: String? = String(index)
+                //save to database
+                self.ref.child("celebs").child(intVal!).setValue(["name": celebName])
+                self.ref.child("celebs").child(intVal!).setValue(["money": moneyValue])
+                x = x+1;
+                return moneyValue
+                
+            }catch {
+                print("error getting follower element")
+            }
+            
+            print("Header title: \(headerTitle)")
+        } catch Exception.Error(let type, let message) {
+            print("Message: \(message)")
+        } catch {
+            print("error")
+        }
+        return -1;
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

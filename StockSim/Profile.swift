@@ -12,10 +12,9 @@ import UIKit
 class Profile{
     var name: String
     var money: Int
-    //var map: [String:Int]
-    var celebStockList:[(celeb: Celebrity, shares: Int)]
+    var celebStockList: String
     
-    init?(name: String, money: Int,celebStockList:[(celeb: Celebrity, shares: Int)]){
+    init?(name: String, money: Int,celebStockList:String){
         if (name.isEmpty){
             return nil
         }

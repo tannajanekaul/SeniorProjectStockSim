@@ -70,14 +70,17 @@ class BuyStockViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
     @IBAction func buyButton(_ sender: UIButton) {
         ref = Database.database().reference()
+        let num = numShares!
+        let celebIndex = (currentCelebrityToBuy?.index)!
         let celebPrice = (currentCelebrityToBuy?.price)!
+        let totalPrice = Int(self.estimatedCostTextField.text!)!
        //sender is the buy button and sender's tag is the celebrities price
         //does the user have enough money to buy the stock
         if ((user?.money)! >= celebPrice){
             //yes they do.
             
             //subtract the user's money in the object
-            user?.money = (user?.money)! - celebPrice
+            user?.money = (user?.money)! - totalPrice
             //subtract the user's money in the database
             let userID = Auth.auth().currentUser?.uid
             self.ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
@@ -86,18 +89,21 @@ class BuyStockViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 let username = value?["username"] as? String ?? ""
                 var userMoney = value?["money"] as? Int
                 //subtract userMoney by the estimated cost (stock price * amount of stocks purchased)
-                userMoney = userMoney! - Int(self.estimatedCostTextField.text!)!
+                userMoney = userMoney! - totalPrice
                 
                 //update the value in the database
                 let childUpdates = ["/users/" + userID! + "/money": userMoney]
                 self.ref.updateChildValues(childUpdates)
                 
                 //add the stock to the user's object
-                self.user?.celebStockList.append((celeb: self.currentCelebrityToBuy!, shares: self.numShares!))
+                var str1: String? = String(describing: num)
+                var str2: String? = String(describing: celebIndex)
+                var str = str2!+str1!
+                self.user?.celebStockList += str + "x"
                 
                 //add the stock to the user's object in the database
-                //let childUpdates2 = ["/users/" + userID! + "/celebstocksowned": self.user?.celebStockList]
-                //self.ref.updateChildValues(childUpdates2)
+                let childUpdates2 = ["/users/" + userID! + "/celebstocksowned": self.user?.celebStockList]
+                self.ref.updateChildValues(childUpdates2)
                 
                 
                 let celebView = self.storyboard?.instantiateViewController(withIdentifier: "CelebrityTableViewController") as! CelebrityTableViewController
@@ -108,10 +114,7 @@ class BuyStockViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             }) { (error) in
                 print(error.localizedDescription)
             }
-
-
-        }
-        else{
+        }else{
             let alertController = UIAlertController(title: "Error", message: "You do not have enough money to purchase this stock.", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)

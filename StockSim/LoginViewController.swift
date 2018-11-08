@@ -28,8 +28,9 @@ class LoginViewController: UIViewController {
                     let value = snapshot.value as? NSDictionary
                     let username = value?["username"] as? String ?? ""
                     let money = value?["money"] as? Int
+                    let celebStockList = value?["celebstocksowned"] as? String ?? ""
                     //var celebStockList = value?["celebStockList"] as? [(celeb: Celebrity, shares: Int)]
-                    self.user = Profile(name: username, money:money!,celebStockList: [])
+                    self.user = Profile(name: username, money:money!,celebStockList:celebStockList)
                     
                     
                     

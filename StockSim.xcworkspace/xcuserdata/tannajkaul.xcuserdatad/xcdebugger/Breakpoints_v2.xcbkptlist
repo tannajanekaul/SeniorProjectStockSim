@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.58301"
+            timestampString = "562699088.5345041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.5855761"
+            timestampString = "562699088.534669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.585693"
+            timestampString = "562699088.534784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -136,24 +136,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.537343"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.59386"
+            timestampString = "562699088.534865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -169,7 +153,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.593998"
+            timestampString = "562699088.534942"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -217,7 +201,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.594062"
+            timestampString = "562699088.535018"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -265,7 +249,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.594138"
+            timestampString = "562699088.535098"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -281,7 +265,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.594229"
+            timestampString = "562699088.5352221"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
@@ -313,7 +297,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.595475"
+            timestampString = "562699088.535385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -329,7 +313,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.595558"
+            timestampString = "562699088.535489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -521,7 +505,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.596936"
+            timestampString = "562699088.5358469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -537,13 +521,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.1908799"
+            timestampString = "562704502.564429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -553,13 +537,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.237282"
+            timestampString = "562704502.564824"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -601,13 +585,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.23815"
+            timestampString = "562704502.564887"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/ViewController.swift"
+            timestampString = "562704502.564935"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -617,29 +617,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.238873"
+            timestampString = "562704502.5649821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "unknown"
-            landmarkType = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.239684"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -681,13 +665,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.240715"
+            timestampString = "562704502.565028"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "ViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -759,13 +743,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.241551"
+            timestampString = "562704502.565073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "ViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -837,13 +821,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.242183"
+            timestampString = "562704502.565117"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -853,13 +837,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.242976"
+            timestampString = "562704502.565161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -901,13 +885,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.24352"
+            timestampString = "562704502.565208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -949,7 +933,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.5977089"
+            timestampString = "562699088.537182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -965,7 +949,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.597754"
+            timestampString = "562699088.537267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -1013,7 +997,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.597823"
+            timestampString = "562699088.537369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -1029,7 +1013,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.597887"
+            timestampString = "562699088.537451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
@@ -1045,7 +1029,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.59795"
+            timestampString = "562699088.53754"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -1061,7 +1045,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/LoginViewController.swift"
-            timestampString = "550702892.598026"
+            timestampString = "562699088.537583"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -1125,11 +1109,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.598176"
+            timestampString = "562704502.565504"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "buyButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1141,11 +1125,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.605389"
+            timestampString = "562704502.5658931"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.566821"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
             landmarkName = "celebNameToInt(celebName:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1157,11 +1157,75 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.606047"
+            timestampString = "562704502.567257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "290"
+            endingLineNumber = "290"
+            landmarkName = "celebNameToInt(celebName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.567578"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
+            landmarkName = "celebNameToInt(celebName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.567896"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
+            landmarkName = "celebNameToInt(celebName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.568205"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
+            landmarkName = "celebNameToInt(celebName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.5688339"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "299"
+            endingLineNumber = "299"
             landmarkName = "mapToInt(letter:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1173,12 +1237,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.606909"
+            timestampString = "562704502.569362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
-            landmarkName = "mapToInt(letter:)"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
+            landmarkName = "celebNameToInt(celebName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1189,108 +1253,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.607957"
+            timestampString = "562704502.5697351"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "mapToInt(letter:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.608942"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "mapToInt(letter:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.609585"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "mapToInt(letter:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.610425"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
-            landmarkName = "CelebrityTableViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.611237"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
-            landmarkName = "mapToInt(letter:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.611855"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "mapToInt(letter:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StockSim/CelebrityTableViewController.swift"
-            timestampString = "561259416.612421"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "buyButton(_:)"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "celebNameToInt(celebName:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1301,7 +1269,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.60123"
+            timestampString = "562704502.570184"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -1317,7 +1285,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.601287"
+            timestampString = "562704502.5702569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -1333,7 +1301,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.601366"
+            timestampString = "562704502.570305"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
@@ -1349,7 +1317,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.60146"
+            timestampString = "562704502.5703731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -1365,7 +1333,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.601523"
+            timestampString = "562704502.5704449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
@@ -1381,7 +1349,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.6031311"
+            timestampString = "562704502.570516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
@@ -1397,7 +1365,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.603317"
+            timestampString = "562704502.570592"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -1413,11 +1381,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.603483"
+            timestampString = "562704502.57068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "buyButton(_:)"
             landmarkType = "7">
             <Locations>
@@ -1461,11 +1429,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.603647"
+            timestampString = "562704502.570748"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "buyButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1477,11 +1445,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/BuyStockViewController.swift"
-            timestampString = "550702892.603768"
+            timestampString = "562704502.570798"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "buyButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1493,13 +1461,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.245211"
+            timestampString = "562704502.570846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1509,13 +1477,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.2459199"
+            timestampString = "562704502.570906"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1525,13 +1493,381 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockSim/ViewController.swift"
-            timestampString = "552542569.246503"
+            timestampString = "562704502.570959"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "signUpButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.571017"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "loadSampleCelebs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.571507"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "loadSampleCelebs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.571858"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "loadSampleCelebs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.572624"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "loadSampleCelebs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.573675"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "getPriceFromScrape(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.5744621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "getPriceFromScrape(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.576915"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "getPriceFromScrape(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.577691"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "getPriceFromScrape(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.578348"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "getPriceFromScrape(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.579047"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "getPriceFromScrape(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.579658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in StockSim.CelebrityTableViewController.getPriceFromDB(celebName: Swift.String, index: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/CelebrityTableViewController.swift"
+                  timestampString = "562704502.937324"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "770">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in StockSim.CelebrityTableViewController.getPriceFromDB(celebName: Swift.String, index: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/CelebrityTableViewController.swift"
+                  timestampString = "562704502.941142"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "1961">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.580289"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.580843"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.581375"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.581903"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.582401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.582898"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StockSim.CelebrityTableViewController.getPriceFromDB(celebName: Swift.String, index: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/CelebrityTableViewController.swift"
+                  timestampString = "562704502.9648089"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "164"
+                  endingLineNumber = "164"
+                  offsetFromSymbolStart = "693">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in StockSim.CelebrityTableViewController.getPriceFromDB(celebName: Swift.String, index: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "StockSim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tannajkaul/Documents/school_docs/SeniorProject/StockSim/StockSim/CelebrityTableViewController.swift"
+                  timestampString = "562704502.968206"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.583402"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockSim/CelebrityTableViewController.swift"
+            timestampString = "562704502.58385"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "getPriceFromDB(celebName:index:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

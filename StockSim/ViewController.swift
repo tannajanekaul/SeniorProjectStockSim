@@ -32,14 +32,11 @@ class ViewController: UIViewController {
         ref = Database.database().reference()
         Auth.auth().createUser(withEmail: UsernameTextField.text!, password: PasswordTextField.text!, completion: { (authData, error)  in
             if error == nil {
-                self.user = Profile(name: self.UsernameTextField.text!, money:self.baseMoney,celebStockList:[])
-                //print(self.ref.debugDescription)
+                self.user = Profile(name: self.UsernameTextField.text!, money:self.baseMoney,celebStockList:"")
                 let userId = Auth.auth().currentUser!.uid
                 self.ref.child("users/\(userId)/username").setValue(self.user.name)
                 self.ref.child("users/\(userId)/money").setValue(self.user.money)
-              //  self.ref.child("users/\(userId)/celebstocksowned").setValue(self.user.celebStockList)
-
-                
+                self.ref.child("users/\(userId)/celebstocksowned").setValue(self.user.celebStockList)
                 
                 let loginView = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                 self.present(loginView, animated: true, completion: nil)

@@ -13,13 +13,15 @@ class Celebrity{
     var name: String
     var price: Int
     var photo: UIImage
-    init?(name: String,price: Int, photo: UIImage){
+    var index: Int
+    init?(name: String,price: Int, photo: UIImage, index: Int){
         if (name.isEmpty){
             return nil
         }
         self.name = name
         self.price = price
         self.photo = photo
+        self.index = index
         
     }
 
