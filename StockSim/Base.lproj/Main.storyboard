@@ -241,7 +241,7 @@
                                                 <action selector="buyButton:" destination="eU0-gn-UGl" eventType="touchUpInside" id="jAL-KG-E08"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gk-nK-gr5">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTB-6b-bs2">
                                             <rect key="frame" x="341" y="30" width="30" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -249,7 +249,7 @@
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <action selector="sellButton:" destination="eU0-gn-UGl" eventType="touchUpInside" id="wnc-05-pnZ"/>
+                                                <action selector="sellButton:" destination="eU0-gn-UGl" eventType="touchUpInside" id="vEP-2B-bZB"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -259,6 +259,7 @@
                                     <outlet property="buyButton" destination="u9D-w5-klA" id="eQj-qq-X9m"/>
                                     <outlet property="nameLabel" destination="IiC-zr-Rl0" id="k3y-xv-BEN"/>
                                     <outlet property="photoImageView" destination="Udf-zN-MoA" id="j5u-Fc-4tC"/>
+                                    <outlet property="sellButton" destination="dTB-6b-bs2" id="eJ5-GL-gWZ"/>
                                     <outlet property="stockPriceTextField" destination="iLK-MF-lYv" id="5LD-nL-0cq"/>
                                 </connections>
                             </tableViewCell>
@@ -392,6 +393,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buyButton:" destination="NND-n8-bcW" eventType="touchUpInside" id="Brj-jC-zeb"/>
+                                    <action selector="sellButton:" destination="mEe-tH-g0g" eventType="touchUpInside" id="Olq-TH-1Dk"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WF0-XJ-fvP">
@@ -551,7 +553,7 @@
         <scene sceneID="gvD-a0-MHz">
             <objects>
                 <viewController id="fEx-hB-uH8" customClass="SettingsViewController" customModule="StockSim" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EnR-ck-nQ5">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SettingsViewController" id="EnR-ck-nQ5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -701,8 +703,8 @@
         <!--Profile View Controller-->
         <scene sceneID="GBY-fj-iRH">
             <objects>
-                <viewController id="0ep-nv-FYX" customClass="ProfileViewController" customModule="StockSim" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dcd-Lh-KuD">
+                <viewController restorationIdentifier="ProfileViewController" storyboardIdentifier="ProfileViewController" id="0ep-nv-FYX" customClass="ProfileViewController" customModule="StockSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ProfileViewController" id="Dcd-Lh-KuD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -721,24 +723,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36A-ML-UlK">
-                                <rect key="frame" x="19" y="452" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Add Money"/>
-                                <connections>
-                                    <action selector="addMoneyButton:" destination="0ep-nv-FYX" eventType="touchUpInside" id="ECv-ew-7Q6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FZ-YT-7aW">
-                                <rect key="frame" x="19" y="490" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Subtract Money"/>
-                                <connections>
-                                    <action selector="subtractMoneyButton:" destination="0ep-nv-FYX" eventType="touchUpInside" id="CGe-TC-eAq"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Af-xz-Nj4">
                                 <rect key="frame" x="19" y="78" width="163" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -768,14 +752,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bm8-Po-T6C">
-                                <rect key="frame" x="19" y="304" width="141" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tfh-3i-WNV">
                                 <rect key="frame" x="16" y="20" width="21" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -786,6 +762,13 @@
                                     <segue destination="eS4-lG-mxo" kind="show" id="RKd-cp-fV7"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tsf-KB-9no">
+                                <rect key="frame" x="19" y="304" width="315" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.94866764550000005" green="0.81131982800000002" blue="0.79360902310000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -794,12 +777,13 @@
                     <navigationItem key="navigationItem" id="aHq-kb-zJx"/>
                     <connections>
                         <outlet property="moneyTextField" destination="3F7-lp-cmO" id="DW6-oa-OCM"/>
+                        <outlet property="stocksOwned" destination="tsf-KB-9no" id="VpW-kw-XpF"/>
                         <outlet property="usernameTextField" destination="b9u-lg-uNu" id="R5u-Ea-Cfh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIt-Gi-lo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2017" y="967"/>
+            <point key="canvasLocation" x="2016.8" y="966.56671664167925"/>
         </scene>
     </scenes>
     <resources>
@@ -807,8 +791,8 @@
         <image name="defaultPhoto" width="112" height="112"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GuD-hU-U99"/>
-        <segue reference="h2o-D4-9UO"/>
-        <segue reference="Y4w-Sa-BIK"/>
+        <segue reference="RKd-cp-fV7"/>
+        <segue reference="G5w-r9-ugg"/>
+        <segue reference="jDF-7J-EIf"/>
     </inferredMetricsTieBreakers>
 </document>

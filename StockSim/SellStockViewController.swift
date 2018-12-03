@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SellStockViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource {
     var pickerData: [String] = [String]()
@@ -15,16 +16,21 @@ class SellStockViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     var celebToBuyInt: Int?
     var user: Profile?
     var numShares: Int?
+    var totalSoldMoney: Int?
+    var ref: DatabaseReference!
+
     @IBOutlet weak var moneyAvailable: UITextField!
-    
     @IBOutlet weak var estimatedValueTextField: UITextField!
     @IBOutlet weak var marketPriceTextField: UITextField!
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var currentStockTextField: UITextField!
+    
     override func viewDidLoad() {
+        numShares = 1
         self.picker.dataSource = self
         self.picker.delegate = self
         super.viewDidLoad()
+        
         let celeb = indexToCelebMap[celebToBuyInt!]
         currentCelebrityToBuy = celeb
         self.currentStockTextField.text = celeb?.name
@@ -56,9 +62,97 @@ class SellStockViewController: UIViewController,UIPickerViewDelegate, UIPickerVi
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
         numShares = row+1
+        totalSoldMoney = numShares!*((currentCelebrityToBuy?.price)!)
         self.estimatedValueTextField.text = String(numShares!*(currentCelebrityToBuy?.price)!)
     }
 
+    @IBAction func sellButton(_ sender: UIButton) {
+        ref = Database.database().reference()
+        let stockList = user?.celebStockList.split(separator:"x")
+        var doesUserHaveStock = false
+        var newStockString = ""
+        for stock in stockList! {
+            let str = ""
+            let stockString = String(stock)
+            let celeb = Int(String(stockString.first!))
+            let shares = Int(String(stockString.last!))
+            let index = currentCelebrityToBuy?.index
+            if (index == celeb && numShares! <= shares!) {
+                doesUserHaveStock = true
+            }
+        }
+        
+        
+        
+        if (doesUserHaveStock) {
+            for stock in stockList! {
+                let stockString = String(stock)
+                let celeb = Int(String(stockString.first!))
+                let index = currentCelebrityToBuy?.index
+                let shares = Int(String(stockString.last!))
+                let newShares = shares! - numShares!
+                let newString = String(describing: index!) + String(describing: newShares)
+                
+                if (index == celeb) {
+                    user?.celebStockList = (user?.celebStockList.replacingOccurrences(of: stockString, with: newString))!
+//                    newStockString = newStockString + String(describing: celeb);
+//                    newStockString = newStockString + String(describing: newShares);
+//                    newStockString = newStockString + "x"
+                } else {
+//                    newStockString = newStockString + String(describing: stock)
+//                    newStockString = newStockString + "x"
+                }
+            }
+        }
+        
+        if (doesUserHaveStock) {
+            //subtract stock from stock list
+            //subtract money in object
+            //subtract money and stock in database
+            
+            let moneyEarned = (currentCelebrityToBuy?.price)!*numShares!
+            user?.money = (user?.money)! + moneyEarned
+            let userID = Auth.auth().currentUser?.uid
+            
+            self.ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+                // Get user value
+                let value = snapshot.value as? NSDictionary
+                let username = value?["username"] as? String ?? ""
+                var userMoney = value?["money"] as? Int
+                //subtract userMoney by the estimated cost (stock price * amount of stocks purchased)
+                userMoney = userMoney! + moneyEarned
+                
+                //update the value in the database
+                let childUpdates = ["/users/" + userID! + "/money": userMoney]
+                self.ref.updateChildValues(childUpdates)
+                
+                //add the stock to the user's object
+
+                //add the stock to the user's object in the database
+                let childUpdates2 = ["/users/" + userID! + "/celebstocksowned": self.user?.celebStockList]
+                self.ref.updateChildValues(childUpdates2)
+//
+//
+                let profileView = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+                profileView.user = self.user
+                self.present(profileView, animated: true, completion: nil)
+                
+                
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+            
+            
+        } else {
+    //error out, do
+            let alertController = UIAlertController(title: "Error", message: "You do not have enough of this stock to sell.", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
     
     // MARK: - Navigation
 

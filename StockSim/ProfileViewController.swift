@@ -10,76 +10,42 @@ import UIKit
 import Firebase
 class ProfileViewController: UIViewController {
     var ref: DatabaseReference!
-    
+    var celebDict = [String : Int]()
     var handle: AuthStateDidChangeListenerHandle?
     var user: Profile!
     @IBOutlet weak var moneyTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
-    @IBAction func addMoneyButton(_ sender: Any) {
-        
-        ref = Database.database().reference()
-        
-        //get users current money
-        let userID = Auth.auth().currentUser?.uid
-        self.ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
-            let value = snapshot.value as? NSDictionary
-            let username = value?["username"] as? String ?? ""
-            var userMoney = value?["money"] as? Int
-           
-            //add 1 dollar to user's money
-            userMoney = userMoney! + 100000
-            
-            //update the value in the database
-            let childUpdates = ["/users/" + userID! + "/money": userMoney]
-            self.ref.updateChildValues(childUpdates)
-            
-            //update the user object
-            self.user.money = userMoney!
-            
-            //update the text field
-            self.moneyTextField.text = String(self.user.money)
-            
-        }) { (error) in
-            print(error.localizedDescription)
-        }
-        
-        
-    }
-    @IBAction func subtractMoneyButton(_ sender: Any) {
-        ref = Database.database().reference()
-        
-        //get users current money
-        let userID = Auth.auth().currentUser?.uid
-        self.ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
-            let value = snapshot.value as? NSDictionary
-            let username = value?["username"] as? String ?? ""
-            var userMoney = value?["money"] as? Int
-            
-            //add 1 dollar to user's money
-            userMoney = userMoney! - 1
-            
-            //update the value in the database
-            let childUpdates = ["/users/" + userID! + "/money": userMoney]
-            self.ref.updateChildValues(childUpdates)
-            
-            //update the user object
-            self.user.money = userMoney!
-            
-            //update the text field
-            self.moneyTextField.text = String(self.user.money)
-            
-        }) { (error) in
-            print(error.localizedDescription)
-        }
-    }
+    
+    @IBOutlet weak var stocksOwned: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        celebDict["Kim Kardashian"] = 0
+        celebDict["JK Rowling"] = 1
+        celebDict["Drake"] = 2
+        celebDict["Beyonce"] = 3
+        celebDict["Diddy"] = 4
+        celebDict["Elon Musk"] = 5
+        celebDict["Travis Scott"] = 6
+        celebDict["Kylie Jenner"] = 7
         usernameTextField.text = user.name
         moneyTextField.text = String(user.money)
+        let stockList = user?.celebStockList.split(separator:"x")
+        for stock in stockList! {
+            let stockString = String(stock)
+            let celeb = Int(String(stockString.first!))
+            let shares = Int(String(stockString.last!))
+            var celebName = ""
+            for (str, val) in celebDict {
+                if (val == celeb) {
+                    celebName = str
+                }
+            }
+            stocksOwned.text = stocksOwned.text! + celebName + " Shares: " + String(describing: shares!)
+            stocksOwned.text = stocksOwned.text! + "\n"
+        }
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

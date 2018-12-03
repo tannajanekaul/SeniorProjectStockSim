@@ -26,7 +26,7 @@ class BuyStockViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var picker: UIPickerView!
 
     override func viewDidLoad() {
-       
+        numShares = 1
         self.picker.dataSource = self
         self.picker.delegate = self
         super.viewDidLoad()
@@ -96,9 +96,9 @@ class BuyStockViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 self.ref.updateChildValues(childUpdates)
                 
                 //add the stock to the user's object
-                var str1: String? = String(describing: num)
-                var str2: String? = String(describing: celebIndex)
-                var str = str2!+str1!
+                var str1: String? = String(describing: celebIndex)
+                var str2: String? = String(describing: num)
+                var str = str1!+str2!
                 self.user?.celebStockList += str + "x"
                 
                 //add the stock to the user's object in the database
@@ -106,9 +106,9 @@ class BuyStockViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 self.ref.updateChildValues(childUpdates2)
                 
                 
-                let celebView = self.storyboard?.instantiateViewController(withIdentifier: "CelebrityTableViewController") as! CelebrityTableViewController
-                celebView.user = self.user
-                self.present(celebView, animated: true, completion: nil)
+                let profileView = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+                profileView.user = self.user
+                self.present(profileView, animated: true, completion: nil)
 
                 
             }) { (error) in

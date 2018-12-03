@@ -32,6 +32,14 @@ class CelebrityTableViewController: UITableViewController {
         loadSampleCelebs()
     }
     
+    @IBAction func buyButton(_ sender: UIButton) {
+        let celebIndex = sender.tag
+        let buyStockView = self.storyboard?.instantiateViewController(withIdentifier: "BuyStockViewController") as! BuyStockViewController
+        buyStockView.celebToBuyInt = celebIndex
+        buyStockView.user = self.user
+        buyStockView.indexToCelebMap = self.indexToCelebMap
+        self.present(buyStockView, animated: true, completion: nil)
+    }
     @IBAction func sellButton(_ sender: UIButton) {
         let celebIndex = sender.tag
         let sellStockView = self.storyboard?.instantiateViewController(withIdentifier: "SellStockViewController") as! SellStockViewController
@@ -41,17 +49,8 @@ class CelebrityTableViewController: UITableViewController {
         self.present(sellStockView, animated: true, completion: nil)
     }
     
-    @IBAction func buyButton(_ sender: UIButton) {
-        let celebIndex = sender.tag
-        let buyStockView = self.storyboard?.instantiateViewController(withIdentifier: "BuyStockViewController") as! BuyStockViewController
-        buyStockView.celebToBuyInt = celebIndex
-        buyStockView.user = self.user
-        buyStockView.indexToCelebMap = self.indexToCelebMap
-        self.present(buyStockView, animated: true, completion: nil)
-    }
-    
     func loadSampleCelebs() {
-        let bool = true;
+        let bool = false;
         let numCelebs = 8
         let photo1 = UIImage(named: "kimkardashian")
         let photo2 = UIImage(named: "jk_rowling")
@@ -229,8 +228,8 @@ class CelebrityTableViewController: UITableViewController {
                 
                 let intVal: String? = String(index)
                 //save to database
-                self.ref.child("celebs").child(intVal!).setValue(["name": celebName])
-                self.ref.child("celebs").child(intVal!).setValue(["money": moneyValue])
+//                self.ref.child("celebs").child(intVal!).setValue(["name": celebName])
+//                self.ref.child("celebs").child(intVal!).setValue(["money": moneyValue])
                 x = x+1;
                 return moneyValue
                 
@@ -277,6 +276,7 @@ class CelebrityTableViewController: UITableViewController {
         cell.stockPriceTextField.text = String(celebrity.price)
         //let celebString = celebrity.name + " " + String(celebrity.price)
         cell.buyButton.tag = indexPath.row
+        cell.sellButton.tag = indexPath.row
         indexToCelebMap[indexPath.row] = celebrity
         
         return cell

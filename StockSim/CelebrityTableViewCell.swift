@@ -15,6 +15,7 @@ class CelebrityTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var stockPriceTextField: UITextField!
     @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var sellButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
